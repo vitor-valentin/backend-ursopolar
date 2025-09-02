@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ursos Polares</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curicaca - Ave Brasileira</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Ursos Polares</h1>
-            <p>Os gigantes do Ártico</p>
-        </header>
+  <header>
+    <h1>Curicaca</h1>
+    <p>A ave de canto inconfundível do sul do Brasil</p>
+  </header>
 
-        <main>
-            <img src="https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/11/06/hans-jurgen-mager-qqwv91ttbre-unsplash-r17b8bay2fza.jpg" alt="Urso Polar">
-            <section class="content">
-                <h2>Sobre os Ursos Polares</h2>
-                <p>Ursos polares vivem nas regiões geladas do Ártico. São excelentes nadadores e caçadores, conhecidos por sua pelagem branca e espessa, que os ajuda a se camuflar no gelo.</p>
-                <a href="/saiba-mais" class="button">Saiba Mais</a>
-                <a href="/contato" class="button">Entre em Contato!</a>
-            </section>
-        </main>
-    </div>
+  <main>
+    <section class="sobre">
+      <img src="https://s2-g1.glbimg.com/ZmzC-xv1M4JA8N3LZ2FQUDDRKvI=/0x0:955x600/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/4/n/bJAoDORDeOg90g1aJiFA/78393871-2768100636568263-6703935695511093248-n.jpg" alt="Foto de uma Curicaca">
+      <div>
+        <h2>Sobre a Curicaca</h2>
+        <p>A curicaca (<em>Theristicus caudatus</em>) é uma ave muito comum no sul do Brasil, conhecida pelo seu canto alto e estridente. Vive em campos abertos e áreas próximas a cidades.</p>
+      </div>
+    </section>
+
+    <section class="curiosidades">
+      <h2>Curiosidades</h2>
+      <button id="mais"><a href="/saibamais">
+        SAIBA MAIS
+      </a>
+    </button>
+      <p id="curiosidadeTexto"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site simples sobre a Curicaca 🪶 | Feito em HTML, CSS e JS</p>
+    <h2>Lista de Avaliações</h2>
+    <button onclick="listarAvaliacao()">Listar Avaliações</button>
+    <ul id="lista-avaliacao"></ul>
+
+    <h2>Adicionar Avaliação</h2>
+    <input id="avaliacao" placeholder="Insira sua avaliação">
+    <button onclick="adicionarAvaliacao()">Adicionar</button>
+
+    <h2>Atualizar Avaliação</h2>
+    <input id="id-update" placeholder="ID">
+    <input id="desc-update" placeholder="Nova avaliação">
+    <button onclick="atualizarAvaliacao()">Atualizar</button>
+
+    <h2>Remover Avaliação</h2>
+    <input id="id-delete" placeholder="ID">
+    <button onclick="deletarAvaliacao()">Remover</button>
+
+  </footer>
+
+  <script src="scriptAvaliacoes.js"></script>
 </body>
 </html>
